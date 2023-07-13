@@ -28,7 +28,7 @@ else if(inputnumber < ran)
 else{
    document.body.style.backgroundColor ="pink";
    document.querySelector("#message").innerHTML="Hurry you Win";
-   document.querySelector(".score").innerHTML =initialvalue--;
+   document.querySelector(".score").innerHTML = --initialvalue;
    document.querySelector(".highscore1").innerHTML=initialvalue;
 
    document.querySelector(".refresh").style.visibility ="hidden"
