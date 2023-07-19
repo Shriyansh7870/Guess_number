@@ -1,6 +1,6 @@
 var ran = random(100);
 var initialvalue=100;
-var highscore =null;
+var highscore1=null;
 console.log(ran);
 function random(n)
 {
@@ -31,7 +31,7 @@ else{
    document.querySelector(".score").innerHTML = --initialvalue;
    document.querySelector(".highscore1").innerHTML=initialvalue;
 
-   document.querySelector(".refresh").style.visibility ="hidden"
+//    document.querySelector(".refresh").style.visibility ="hidden"
    document.querySelector(".Number").innerText=inputnumber;
 }
 }
@@ -42,5 +42,12 @@ else{
 
  function gameload()
  {
-    location.reload();
+        initialvalue=100;
+        document.body.style.backgroundColor = "pink"
+        document.querySelector('.score').textContent = initialvalue
+        document.querySelector('.Number').textContent = '?'
+        document.getElementById('gussid').value = ''
+        document.querySelector(".message").textContent = 'Start Guessing...'
+        ran = random(100);
+    
  }
