@@ -2,6 +2,20 @@ var ran = random(100);
 var initialvalue=100;
 var highscore1=null;
 console.log(ran);
+
+function gameload()
+{
+       initialvalue=100;
+       document.body.style.backgroundColor = "pink"
+       document.querySelector('.score').textContent = initialvalue
+       document.querySelector('.Number').textContent = '?'
+       document.getElementById('gussid').value = ''
+       document.querySelector("#message").textContent = 'Start Guessing...'
+       ran = random(100);
+       console.log(ran)
+   
+}
+
 function random(n)
 {
     return Math.floor(Math.random()*n)+1;
@@ -40,14 +54,4 @@ else{
 }
 }
 
- function gameload()
- {
-        initialvalue=100;
-        document.body.style.backgroundColor = "pink"
-        document.querySelector('.score').textContent = initialvalue
-        document.querySelector('.Number').textContent = '?'
-        document.getElementById('gussid').value = ''
-        document.querySelector(".message").textContent = 'Start Guessing...'
-        ran = random(100);
-    
- }
+
